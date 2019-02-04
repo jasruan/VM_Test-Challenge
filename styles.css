@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Open+Sans');
+body {
+    font-family: 'Open Sans', sans-serif;;
+    padding: 0 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    text-align:center;
+    padding:15px;
+    font-family: 'Anton', sans-serif;
+}
+
+.search {
+    padding-bottom: 30px;
+}
+.search__label {
+    font-weight: bold;
+    font-size: 18px;
+}
+.search__input {
+    padding: 5px;
+    border: 1px solid #333;
+}
+.search__button{
+    display: inline-block;
+    padding: 0.6em;
+    border-radius: 10%;
+    background-color:rgb(41, 87, 64);
+    color:white;
+}
+
+
+
+.table {
+    width: 48%;
+    border: 1px solid #333;
+    background-color: white;
+    height:fit-content;
+}
+.table__header {
+    background-color:#2f3e38;
+    font-weight: bold;
+    color: white;
+}
+
+.table__row {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+.table__row:last-child {
+    border-bottom: 0
+}
+
+.table__cell {
+    margin-right: 10px;
+}
+.table__cell--short {
+    flex-shrink: 0;
+    width: 50px;
+}
+.table__cell--long{
+    flex-grow:1;
+}
+.table__cell:last-child {
+    margin-right: 0px;
+}
+.data__row:nth-child(even){
+    background-color:#457d81;
+    color:white;
+}
+.data__row:hover{
+    color:white;
+    background-color:rgb(41, 87, 64) !important;
+}
+
+.search_section{
+    display:flex;
+    justify-content: space-around;
+}
+.selected{
+     background-color:rgb(53, 193, 120) !important;
+     color:white;
+     border:none;
+     box-shadow:3px 3px 5px rgb(20, 27, 24);
+     transition: background-color 300ms linear; 
+}
+.dropzone{
+    display:none;
+    background-color:rgb(73, 175, 123);
+    color:white;
+    height:12em;
+    align-items: center;
+    justify-content: center;
+}
